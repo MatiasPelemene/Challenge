@@ -4,6 +4,8 @@
   "description": "CodeChallege DeviGet",
   "main": "index.js",
   "dependencies": {
+    "chai": "^4.1.2",
+    "chai-webdriverio": "^0.4.3",
     "selenium-standalone": "^6.15.1"
   },
   "devDependencies": {
