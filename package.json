@@ -1,0 +1,27 @@
+{
+  "name": "repo",
+  "version": "1.0.0",
+  "description": "CodeChallege DeviGet",
+  "main": "index.js",
+  "dependencies": {
+    "selenium-standalone": "^6.15.1"
+  },
+  "devDependencies": {
+    "wdio-mocha-framework": "^0.6.2",
+    "webdriverio": "^4.13.1"
+  },
+  "scripts": {
+    "test": "wdio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatiasPelemene/Challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatiasPelemene/Challenge/issues"
+  },
+  "homepage": "https://github.com/MatiasPelemene/Challenge#readme"
+}
