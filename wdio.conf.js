@@ -16,6 +16,13 @@ exports.config = {
     exclude: [
         // 'path/to/excluded/files'
     ],
+    suites: {
+        api: [
+            './tests/firstTest.js',
+            './tests/secondTest.js'
+        ]
+        
+    },
     //
     // ============
     // Capabilities
@@ -42,7 +49,7 @@ exports.config = {
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
-        maxInstances: 5,
+        maxInstances:10,
         //
         browserName: 'chrome'
     }],
