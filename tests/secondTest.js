@@ -12,17 +12,21 @@ describe('webdriver.io page', function() {
         var url = browser.url();
         console.log(url);
     });
-    it('it should have to be possible to click API button menu', function(){
+    it('it should search click on searcher', function(){
         browser.url('/')
-        browser.isExisting('=API');
-        browser.click('=API');
+        browser.isExisting("[class='ds-input']");
+        browser.click("[class='ds-input']");
+        browser.setValue("[class='ds-input']", 'Click')
         var title = browser.getTitle();
-        assert.equal(title, 'WebdriverIO - API Docs');
-        browser.isExisting('=click');
-        browser.click('=click');
-        //browser.debug();
-        browser.isExisting('#click');
+        console.log(title);
+        var myElem = browser.element("[class='algolia-docsearch-suggestion--title']");
+        myElem.waitForVisible();
+        browser.isExisting("[class='algolia-docsearch-suggestion--title']")
+        browser.click("[class='algolia-docsearch-suggestion--title']");
         chai.expect('#click');
+        var url = browser.url();
+        console.log(url);
+        
     });
 
 
